@@ -1,0 +1,67 @@
+Comentando sobre a evolução do JavaScript
+
+Web Apps
+    Aplicações sofisticadas rodando no navegador
+    Atualizações incrementais
+    Não necessidade de recarregar a página para navegar
+    Linguagem de programação completa
+
+    Alguns problemas do Web Apps
+        Páginas pesadas
+        Parte da população com device fraco e internet limitada
+        Impacto em vendas
+        SEO (indexação das páginas em sistemas de busca)
+        Acessibilidade
+
+100% Estático x 100% Servidor x Dinâmico
+
+Estático
+    HTML gerado como um arquivo
+Prós:
+    Resposta rápida ( página já montada )
+    ótimo para indexação
+    Menos ou nenhum processamento
+Contras:
+    Conteúdo fixo
+    
+
+
+Servidor
+    Conteúdo renderizado no servidor a cada requisição
+Prós:
+    Conteúdo dinâmico no servidor
+    Indexação nos sistemas de busca
+Contras:
+    Tempo de resposta aumenta
+    Baixa experiência do usuário
+    Recarregamento da página a cada link acessado
+
+
+Dinâmico
+    Onde moram as Web Apps
+Prós:
+    Rica experiência do usuário
+    Aplicações completas
+Contras:
+    Indexação nos sistemas de busca
+    Carregamento ( se não otimizado) 
+
+
+Soluções
+    Escolha de acordo com o seu projeto
+100% estático
+100% no servidor
+100% no navegador
+Conteúdo híbrido
+
+Renderização híbrida
+    Renderização parcial no servidor e restante no navegador
+    Renderização no navegador "on demand"
+Prós:
+    Experiência do usuário
+    Carregamento rápido (menos peso)
+    Indexação nos sistemas de busca
+Contras:
+    Desenvolvimento complexo
+
+
