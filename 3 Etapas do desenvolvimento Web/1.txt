@@ -1,0 +1,34 @@
+Etapas do Desenvolvimento Web
+
+**5 etapas do Desenvolvimento de Aplicação WEB
+    Entrada
+    Validação
+    Estrutura / Manipulação
+    Renderização
+    Erros
+
+    Entrada
+        Finalidade manipular dados
+        Receber dados externos > APIs externas
+
+    Validação
+        Validar esses dados da ENTRADA
+
+    Estrutura / Manipulação    - Gerenciamento de estado
+        Armazenamento / manipulação
+        Como você armazena esses dados e estrutura? Tipos string, array, etc
+        Regra de negocio, blibiotecas, etc
+
+    Renderização
+        Depois das etapas anteriores, isso reflete como será renderizado para o usuário
+        Mostrando o resultado para o cliente
+
+        * Renderização cresceu tanto, que gerou uma SUB CAMADA, chamada "COMPONENTES"
+            Armazena os dados de animações por exemplo, etc
+
+**4 camadas de um desenvolvimento de WEB APP - Roteamento
+    Componentes
+    Gerenciamento de estado
+    Roteamento
+    Renderização
+
