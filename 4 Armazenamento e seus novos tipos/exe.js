@@ -18,6 +18,7 @@ console.log(user.name);
 Desvantagens: não possui todas as funções que o ARRAY tem
 Objetos não guarda a ordem que foi salva em objetos
 Você não sabe quantos elementos tem, apenas de forma manual
+Objetos, só aceita como chave: strings, numbers, ou symbols
 
 
 */
