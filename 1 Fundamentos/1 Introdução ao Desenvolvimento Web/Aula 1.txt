@@ -1,0 +1,13 @@
+Fundamentos do HTML, CSS e JavaScript
+
+HTML = colunas, estruturas
+CSS = Espaçamento, cores
+JavaScript = Lógico por trás
+
+Quando colocamos um site no navegador, ele faz um pedido para o servidor e ele irá responder o HTML desse pedido.
+A partir disso, o browser vai receber as estruturas HTML, realizando um novo pedido para o servidor, para receber os arquivos CSS, as imagens, JavaScript, etc
+
+Cada browser tem seu CSS padrão, então por isso, precisamos resetar o CSS para iniciar do 0 em todas as versões do navegadores.
+
+h1 título principal da página
+h2
