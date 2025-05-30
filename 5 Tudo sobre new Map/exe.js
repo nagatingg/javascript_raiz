@@ -27,30 +27,30 @@ console.log(mapa); */
 
 // Outro método para adicionar valores no Map, utilizando o set
 
-const mapa = new Map([
+const mapaOne = new Map([
     ["oioioi", "Hello"]
 ]);
-mapa.set(0, "Programador");
-mapa.set(true, "A");
+mapaOne.set(0, "Programador");
+mapaOne.set(true, "A");
 
 const obj = { slug: "oioioi" };
 
-mapa.set(obj, "Bordo");
+mapaOne.set(obj, "Bordo");
 
-// console.log(mapa);
+// console.log(mapaOne);
 
 // Quero imprimir apenas um valor especifico de chave, dessa forma utilizo o GET:
 // GET é a forma de acessar
-console.log(mapa.get(0));
-console.log(mapa.get("oioioi"));
+console.log(mapaOne.get(0));
+console.log(mapaOne.get("oioioi"));
 
 /* Tipos primitivos é tratados de formas diferente como é tratado objetos,funções, etc
 Objetos, funções, entre outros. Alocam na memória os valores. Dai acontece um APONTAMENTO por REFERÊNCIA quando utilizamos esses valores
 No caso do objeto mapa.set({}, "Bordo"); | Ele é diferente do objeto que estou tentando imprimir */
 
-console.log(mapa.get(obj));
+console.log(mapaOne.get(obj));
 
-console.log(mapa.size);
+console.log(mapaOne.size);
 /* Porque array e string é length e mapa é size?
 O array e string são listas indexada.
 Já em map, ele mostra realmente quando valores existem dentro daquele map
@@ -60,9 +60,9 @@ const arr = [];
 arr[50] = "oioioi";
 console.log(arr.length);
 
-mapa.set(50, "aeaeae");
+mapaOne.set(50, "aeaeae");
 
-console.log(mapa.size);
+console.log(mapaOne.size);
 
 /*
 Alguns comandos/métodos importantes do map
@@ -87,10 +87,49 @@ mapa.clear();
 console.log(mapa.size);
 */
 
-console.log(mapa.has(50));
+console.log(mapaOne.has(50));
 
-mapa.delete(50);
+mapaOne.delete(50);
 document.write("<br>");
-mapa.forEach(function(value, key) {
+mapaOne.forEach(function(value, key) {
     console.log(value);
 })
+
+for (let [key, value] of mapaOne) {
+    console.log(key, value)
+}
+
+console.log([...mapaOne.keys()])
+
+for ( let k of mapaOne.keys()) {
+    console.log("id", k)
+}
+
+console.log(mapaOne.values())
+
+for (let [key, value ]of mapaOne.entries()) {
+    console.log("entry", key, value)
+}
+
+const usuarios = new Map;
+usuarios.set(0, {
+    name: "Joao",
+    pais: "Brasil"
+});
+usuarios.set(1, {
+    name: "Wesley",
+    pais: "Brasil"
+});
+usuarios.set(2, {
+    name: "Pedro",
+    pais: "Brasil"
+});
+
+const usuariosFiltrados = Array.from(usuarios.entries())
+    .filter(function(usuarioEntrada){
+        return usuarioEntrada[1].pais === "Brasil"
+    })
+console.log(usuariosFiltrados)
+
+const usuariosFiltrados2 = new Map(usuariosFiltrados)
+console.log(usuariosFiltrados2.get(0))
